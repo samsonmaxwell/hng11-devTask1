@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+  color: #fff;
+  font-family: "Ubuntu";
+}
+
+#main {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2em auto;
+  flex-direction: row;
+}
+
+#profilePicture {
+  width: 50%;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 90%;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+#details_goals {
+  width: 50%;
+}
+
+#fullName {
+  margin-bottom: 1em;
+}
+
+#details {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.goals {
+  line-height: 1.5em;
+}
+
+#exLinks {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #main {
+    flex-direction: column;
+    margin: 1em auto;
+  }
+  #details_goals {
+    width: 100%;
+  }
+  #details {
+    flex-direction: column;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #main {
+    flex-direction: column;
+    margin: 1em auto;
+  }
+  #details_goals {
+    width: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #main {
+    flex-direction: column;
+    margin: 2em auto;
+  }
+  #details_goals {
+    width: 100%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #main {
+    flex-direction: row;
+    margin: 3em auto;
+  }
+  #details_goals {
+    width: 50%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #main {
+    flex-direction: row;
+    margin: 5em auto;
+  }
+  #details_goals {
+    width: 50%;
+  }
+}
